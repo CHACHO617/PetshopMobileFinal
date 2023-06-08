@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetshopMobileProgreso2.Pages.Carrito"
+             Title="Carrito">
+    <StackLayout>
+
+        <Image Source="https://cdn-icons-png.flaticon.com/512/1413/1413908.png" HeightRequest="80" Margin="16"/>
+        
+        <ListView x:Name="ListaGlobalProductos" ItemSelected="DetalleItem1" RowHeight="80">
+            
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    
+                    <ViewCell>
+                        <StackLayout Spacing="10" Margin="10" Orientation="Horizontal" BackgroundColor="AliceBlue" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="AliceBlue">
+                                
+                                <StackLayout Orientation="Horizontal">                                    
+                                    <Label Text="Nombre: " VerticalOptions="FillAndExpand"/>
+                                    <Label Text="{Binding Nombre}" VerticalOptions="FillAndExpand"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Descripcion: " VerticalOptions="FillAndExpand"/>
+                                    <Label Text="{Binding Descripcion}" VerticalOptions="FillAndExpand"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Precio: " VerticalOptions="FillAndExpand"/>
+                                    <Label Text="{Binding Precio}" VerticalOptions="FillAndExpand"/>
+                                </StackLayout>                              
+
+                            </StackLayout>
+
+                         </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <Button
+                x:Name="PagarBtn"
+                Text="Calcular valor a pagar"
+                SemanticProperties.Hint="Cantidad a Pagar"
+                Margin="20,0,20,0"
+                BackgroundColor="#555555"
+                Clicked="OnPagarClicked"
+                />
+        
+        <Button
+                x:Name="Redirect"
+                Text="Pagar"
+                SemanticProperties.Hint="Cantidad a Pagar"
+                BackgroundColor="DarkBlue"
+                Margin="20"
+                Clicked="Redirect_Clicked"/>
+
+
+
+    </StackLayout>
+    
+</ContentPage>
+    
+    

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetshopMobileProgreso2.Pages.FacturaPage"
+             Title="FacturaPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Gracias Por Tu Compra"
+            FontSize="30"
+            HorizontalOptions="Center"
+            Margin="20"
+            VerticalOptions="Start"/>
+
+        <Image
+                x:Name="imagen"
+                Source="https://i.postimg.cc/KvR13db9/Group-1.png"
+                HeightRequest="250"
+                Margin="40"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
+
+
+        <Button
+                x:Name="Finalizar"
+                Text="Finalizar"
+                SemanticProperties.Hint="Cantidad a Pagar"
+                Clicked="Finalizar_Clicked"
+                Margin="20,250,20,20"
+                BackgroundColor="#555555"
+                VerticalOptions="EndAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetshopMobileProgreso2.Pages.ProductosPage"
+             Title="ProductosPage">
+    <StackLayout>
+
+        <Image Source="https://i.postimg.cc/kGHDh4nV/mascota.png" HeightRequest="80" Margin="16"/>
+
+
+        <ListView x:Name="listaProductos" ItemSelected="DetalleItem"  RowHeight="80">
+            <ListView.ItemTemplate>
+
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Spacing="10" Margin="10" Orientation="Horizontal" BackgroundColor="AliceBlue" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Nombre: "/>
+                                    <Label Text="{Binding Nombre}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Descipcion: "/>
+                                    <Label Text="{Binding Descripcion}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                                    
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Cantidad: "/>
+                                    <Label Text="{Binding Cantidad}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                                    <Label Text="                                                    Precio: "/>
+                                    <Label Text="{Binding Precio}" VerticalOptions="Fill" HorizontalOptions="End"/>
+                                    <Label Text="$"/>
+                                </StackLayout>                                
+                                
+                                
+
+                            </StackLayout>
+
+                            <!--  <ImageCell Text="{Binding nombre}"
+                               Detail="{Binding telefono}"
+                               ImageSource="{Binding imagen}"/>
+                        -->
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+
+
+
+        <Button Text="Ir al Carrito"            
+                Margin="20"  
+                Clicked="IrACarrito"
+                BackgroundColor="DarkBlue"
+                 />
+
+
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetshopMobileProgreso2.Pages.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        
+
+        <Label 
+            Text="Bienvenido, ingresa tus credenciales"
+            FontSize="20"
+            FontAttributes="Bold"
+            FontFamily="Metronic"
+            Margin="24, 50, 24, 50"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Image Source="https://i.postimg.cc/pryGqyd5/Group-74.png" HeightRequest="150"/>
+
+        <Entry x:Name="txtUsuario" Placeholder="Ingresa tu usuario" HorizontalOptions="Center" Margin="20, 20, 20, 0"/>
+
+        <Entry x:Name="txtPass"  IsPassword="True" Placeholder="Ingresa tu contraseña" HorizontalOptions="Center" Margin="20"/>
+
+        <Button Text="Login"            
+                    Margin="8"
+                    Clicked="ClickBotonLogin"
+                    BackgroundColor="DarkBlue"
+                    HorizontalOptions="FillAndExpand"/>
+
+    </VerticalStackLayout>
+</ContentPage>
