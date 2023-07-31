@@ -3,9 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetshopMobileProgreso2.Pages.Carrito"
              Title="Carrito">
+   
     <StackLayout>
 
-        <Image Source="https://cdn-icons-png.flaticon.com/512/1413/1413908.png" HeightRequest="80" Margin="16"/>
+        <Image Source="https://i.ibb.co/42yxLGg/Group-30.png" HeightRequest="100" Margin="16"/>
         
         <ListView x:Name="ListaGlobalProductos" ItemSelected="DetalleItem1" RowHeight="80">
             
@@ -14,8 +15,8 @@
                 <DataTemplate>
                     
                     <ViewCell>
-                        <StackLayout Spacing="10" Margin="10" Orientation="Horizontal" BackgroundColor="AliceBlue" HorizontalOptions="FillAndExpand">
-                            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="AliceBlue">
+                        <StackLayout Spacing="10" Margin="10" Orientation="Horizontal" BackgroundColor="#FFFBEF" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" BackgroundColor="#FFFBEF">
                                 
                                 <StackLayout Orientation="Horizontal">                                    
                                     <Label Text="Nombre: " VerticalOptions="FillAndExpand"/>
@@ -28,6 +29,7 @@
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Precio: " VerticalOptions="FillAndExpand"/>
                                     <Label Text="{Binding Precio}" VerticalOptions="FillAndExpand"/>
+                                    <Label Text=" $" VerticalOptions="FillAndExpand"/>
                                 </StackLayout>                              
 
                             </StackLayout>
@@ -45,8 +47,11 @@
                 Text="Calcular valor a pagar"
                 SemanticProperties.Hint="Cantidad a Pagar"
                 Margin="20,0,20,0"
-                BackgroundColor="#555555"
+                BackgroundColor="White"
                 Clicked="OnPagarClicked"
+                TextColor="#37474F"
+                FontAttributes="Bold"
+                FontSize="Medium"
                 />
         
         <Button
@@ -55,7 +60,9 @@
                 SemanticProperties.Hint="Cantidad a Pagar"
                 BackgroundColor="DarkBlue"
                 Margin="20"
-                Clicked="Redirect_Clicked"/>
+                Clicked="Redirect_Clicked"
+                FontAttributes="Bold"
+                FontSize="Medium"/>
 
 
 

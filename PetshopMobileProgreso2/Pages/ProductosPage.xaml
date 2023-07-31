@@ -2,10 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetshopMobileProgreso2.Pages.ProductosPage"
-             Title="ProductosPage">
+             Title="ProductosPage"
+             BackgroundColor="White">
     <StackLayout>
 
-        <Image Source="https://i.postimg.cc/kGHDh4nV/mascota.png" HeightRequest="80" Margin="16"/>
+        <Image Source="https://i.ibb.co/9HMJkhx/Group-27.png" HeightRequest="100" Margin="16"/>
 
 
         <ListView x:Name="listaProductos" ItemSelected="DetalleItem"  RowHeight="80">
@@ -13,7 +14,7 @@
 
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout Spacing="10" Margin="10" Orientation="Horizontal" BackgroundColor="AliceBlue" HorizontalOptions="FillAndExpand">
+                        <StackLayout Spacing="10" Margin="10" Orientation="Horizontal" BackgroundColor="#FFFBEF" HorizontalOptions="FillAndExpand">
                             <StackLayout Orientation="Vertical">
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Nombre: "/>
@@ -55,6 +56,11 @@
                 Margin="20"  
                 Clicked="IrACarrito"
                 BackgroundColor="DarkBlue"
+                TextColor="White"
+                FontAttributes="Bold"
+                BorderColor="DarkBlue"
+                FontSize="Medium"
+                           
                  />
 
 

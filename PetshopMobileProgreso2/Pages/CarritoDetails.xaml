@@ -6,7 +6,7 @@
     <VerticalStackLayout>
         <Image
                 x:Name="imagen"
-                Source="https://i.postimg.cc/FHKy7f6S/alimentos-para-mascotas.png"
+                Source="https://i.postimg.cc/kGHDh4nV/mascota.png"
                 HeightRequest="150"
                 Margin="20"
                 HorizontalOptions="Center" />
@@ -38,10 +38,12 @@
         <StackLayout Orientation="Horizontal" >
 
             <Button Text="Regresar" 
-                    BackgroundColor="Gray"
+                    BackgroundColor="#949CA0"
                     Margin="8"
                     Clicked="onClickRetroceder1"
-                    HorizontalOptions="FillAndExpand"/>
+                    HorizontalOptions="FillAndExpand"
+                    TextColor="White"
+                    FontAttributes="Bold"/>
 
             <Button Text="Eliminar de Carrito"            
                     Margin="8"

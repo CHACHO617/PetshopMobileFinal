@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetshopMobileProgreso2.Pages.LoginPage"
-             Title="LoginPage">
+             Title="LoginPage"
+             BackgroundColor="#FFFBEF">
     <VerticalStackLayout HorizontalOptions="Center">
 
         
@@ -18,15 +19,24 @@
 
         <Image Source="https://i.postimg.cc/pryGqyd5/Group-74.png" HeightRequest="150"/>
 
-        <Entry x:Name="txtUsuario" Placeholder="Ingresa tu usuario" HorizontalOptions="Center" Margin="20, 20, 20, 0"/>
+        <Entry x:Name="txtUsuario" Placeholder="Ingresa tu Email" HorizontalOptions="Center" Margin="20, 20, 20, 0" HorizontalTextAlignment="Center" PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
 
-        <Entry x:Name="txtPass"  IsPassword="True" Placeholder="Ingresa tu contraseña" HorizontalOptions="Center" Margin="20"/>
+        <Entry x:Name="txtPass"  IsPassword="True" Placeholder="Ingresa tu Contraseña" HorizontalOptions="Center" Margin="20, 20, 20, 0" HorizontalTextAlignment="Center" PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
 
+        <Image x:Name="IngresoErroneo" 
+                   HeightRequest="125" 
+                   HorizontalOptions="Center"
+                    Margin="40"/>
+        
         <Button Text="Login"            
                     Margin="8"
                     Clicked="ClickBotonLogin"
                     BackgroundColor="DarkBlue"
-                    HorizontalOptions="FillAndExpand"/>
+                    HorizontalOptions="FillAndExpand"
+                    FontSize="Medium"
+                    FontAttributes="Bold"/>
 
     </VerticalStackLayout>
 </ContentPage>

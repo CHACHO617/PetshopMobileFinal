@@ -26,7 +26,10 @@
                 SemanticProperties.Hint="Cantidad a Pagar"
                 Clicked="Finalizar_Clicked"
                 Margin="20,250,20,20"
-                BackgroundColor="#555555"
-                VerticalOptions="EndAndExpand"/>
+                BackgroundColor="#949CA0"
+                VerticalOptions="EndAndExpand"
+                FontSize="Medium"
+                TextColor="White"
+                FontAttributes="Bold"/>
     </VerticalStackLayout>
 </ContentPage>

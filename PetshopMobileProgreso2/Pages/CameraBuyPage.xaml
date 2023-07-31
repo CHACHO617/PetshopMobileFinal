@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetshopMobileProgreso2.Pages.CameraBuyPage"
+             Title="CameraBuyPage"
+             BackgroundColor="White">
+    <VerticalStackLayout>
+
+        <StackLayout>
+            <Label Text="Datos de tu Tarjeta" TextColor="#37474F" FontSize="Large" FontAttributes="Bold" Margin="40" HorizontalOptions="Center" TextDecorations="Underline"/>
+            <Entry x:Name="CardHolderNameEntry" 
+                   Placeholder="Ingresa el Nombre del Titular" 
+                   Keyboard="Text" 
+                   Margin="8" 
+                   HorizontalOptions="Center" 
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
+                   
+            
+            <Entry x:Name="CreditCardNumberEntry" 
+                   Placeholder="Enter credit card number" 
+                   Keyboard="Numeric" Margin="8,8,8,2" 
+                   HorizontalOptions="Center" 
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
+            
+            <Image x:Name="CardBrandIcon" 
+                   HeightRequest="150" 
+                   WidthRequest="150" 
+                   HorizontalOptions="Center"/>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Entry x:Name="ExpirationMonth" Placeholder="mm" Keyboard="Numeric" HorizontalOptions="Center" Margin="8" HorizontalTextAlignment="Center" MaxLength="2" FontSize="Large" PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
+                <Label Text="/" HorizontalOptions="Center" Margin="8" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="Large" TextColor="#37474F"/>
+                <Entry x:Name="ExpirationYear" Placeholder="aa" Keyboard="Numeric" HorizontalOptions="Center" Margin="8" HorizontalTextAlignment="Center" MaxLength="2" FontSize="Large" PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
+            </StackLayout>
+
+            <Entry x:Name="CvvEntry" IsPassword="True" Placeholder="CVV" Keyboard="Numeric" HorizontalOptions="Center" Margin="8" HorizontalTextAlignment="Center" FontSize="Medium" MaxLength="3" PlaceholderColor="#B5C0C5"
+                   TextColor="#37474F"/>
+
+            <Image x:Name="ErrorSuccesIcon" 
+                   HeightRequest="100"                    
+                   HorizontalOptions="Center"
+                   Margin="24"
+                   />
+
+            <Button Text="Pagar" Margin="8" BackgroundColor="DarkBlue" HorizontalOptions="Fill" TextColor="White" Clicked="Button_Clicked1" FontSize="Medium"/>
+        </StackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>

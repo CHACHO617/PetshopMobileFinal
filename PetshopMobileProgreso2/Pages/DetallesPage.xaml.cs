@@ -19,10 +19,10 @@ public partial class DetallesPage : ContentPage
     {
         base.OnAppearing();
 		Producto producto = BindingContext as Producto;
-		Nombre.Text = producto.Nombre;
-		Descripcion.Text = producto.Descripcion;
-		Precio.Text = producto.Precio.ToString();
-		Cantidad.Text = producto.Cantidad.ToString();
+		Nombre.Text = "Nombre: " + producto.Nombre;
+		Descripcion.Text = "Decripción: " + producto.Descripcion;
+		Precio.Text = "Precio: " +producto.Precio.ToString() +"$";
+		Cantidad.Text = "Cantidad: "+producto.Cantidad.ToString();
     }
 
 	private async void onClickAgregarACarrito(object sender, EventArgs e)
